@@ -3,21 +3,31 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Tutorial Collection: Creating CityGML Datasets
-==============================================
+Guideline Collection: Creating CityGML Datasets
+===============================================
 
-The objective of this repository is to collect tutorials
+The objective of this repository is to collect guidelines
 on the different ways to create `CityGML`_ datasets.
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
 .. _CityGML: https://www.opengeospatial.org/standards/citygml
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. toctree::
+   :maxdepth: 2
+   :caption: Software
+
+   software/software
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Creation Guidelines
+
+   creation-guidelines/lod3-models-based-on-point-clouds
+   creation-guidelines/other-guidelines
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Validation
+
+   validation/validating-datasets
