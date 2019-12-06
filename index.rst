@@ -3,14 +3,17 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Creating CityGML Datasets's documentation!
-=====================================================
+Tutorial Collection: Creating CityGML Datasets
+==============================================
+
+The objective of this repository is to collect tutorials
+on the different ways to create `CityGML`_ datasets.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
-
+.. _CityGML: https://www.opengeospatial.org/standards/citygml
 
 Indices and tables
 ==================
