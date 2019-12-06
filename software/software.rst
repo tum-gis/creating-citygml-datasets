@@ -5,10 +5,29 @@ In the following the software which is used within
 the actual guidelines is listed.
 In addition, further information and related links are provided.
 
-General Overviews
-^^^^^^^^^^^^^^^^^
+Feature Manipulation Engine (FME)
+---------------------------------
 
-There also exist software lists providing a more general overview over software related to CityGML:
+SketchUp
+--------
+
+(with extensions)
+
+3difier
+-------
+
+3D City Database: Importer Exporter
+-----------------------------------
+
+citygml4j
+---------
+
+
+General Overviews
+-----------------
+
+There also exist software lists providing a more general
+overview over software related to CityGML:
 
 - `citygmlwiki: freeware`_
 - `citygmlwiki: commercial software`_
