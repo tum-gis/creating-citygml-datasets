@@ -12,6 +12,9 @@ SketchUp
 `SketchUp`_ is a 3D modeling software that is used in areas like architecture, civil engineering and design.
 It is actively developed by `Trimble Inc.`_ and offers a wide range of extensions in the `extension warehouse`_.
 
+.. image:: resources/SketchUp.png
+    :width: 100%
+
 SketchUp comprises multiple editions:
 `SketchUp Free`_ runs in the browser with limited functionality.
 `SketchUp Pro`_ is the full-featured and fee-based desktop edition with the ability to install all extensions.
