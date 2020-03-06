@@ -1,14 +1,21 @@
-Tutorial LoD3 modelling
-=======================
+LoD3 Modeling based on Mobile Laser Scans
+=========================================
+
+Preliminary
+-----------
+
+Software
+^^^^^^^^
 
 Requirements
-------------
-
 - `SketchUp Make 2017 (or newer/Pro) <https://www.sketchup.com/download/all>`_
 - `CityEditor plugin <https://extensions.sketchup.com/de/content/cityeditor-2>`_
 
+Useful Plugins
+- tba
+
 Input data
-----------
+^^^^^^^^^^^^
 Within this workflow pipeline following datasets were used:
 
 - XYZ (simplified pointcloud =< 150 000 points to assure SketchUp efficiency)
