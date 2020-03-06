@@ -8,10 +8,12 @@ Software
 ^^^^^^^^
 
 Requirements
+
 - `SketchUp Make 2017 (or newer/Pro) <https://www.sketchup.com/download/all>`_
 - `CityEditor plugin <https://extensions.sketchup.com/de/content/cityeditor-2>`_
 
 Useful Plugins
+
 - tba
 
 Input data
