@@ -192,7 +192,17 @@ Attributes like *PolygonID* and *LinearRingID* should be erased before export in
 .. image:: resources/18a.jpg
     :width: 100%
 
+The validation of model structure can be done via Model Explorer located on the main SketchUp bar. Before validation, it is recommended to erase all elements not relevant to the export (e.g. point cloud).
+In case of modelling LoD3 object, using MultiSurface geometry and using Building only as container for attributes (not for geometry) the strucuture should be similar to the image below.  
 
+.. image:: resources/18b.jpg
+    :width: 100%
+
+After clicking on the arrow located in the column gml:id, the structure of the object reveals.
+
+.. image:: resources/18c.jpg
+    :width: 100%
+	
 Data export
 -----------
 
