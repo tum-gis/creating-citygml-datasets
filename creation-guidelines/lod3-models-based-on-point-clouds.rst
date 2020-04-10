@@ -181,12 +181,15 @@ The similar steps have to be done for each new object within SketchUp. To assure
 
 Having all objects created and assigned, you can now collect them into one Building object by selecting all items and grouping them. To the group object you can add attributes (*Right Click-> Attributes -> Edit Attributes*) or paste attributes copied before from LoD1 building (*Right Click-> Attributes -> Paste Attributes*).
 
+.. image:: resources/18.jpg
+    :width: 100%
+
 After that, it is important to erase all automatic IDs created within a group to avoid redundant IDs within a model and in comparison with other buildings.
-T do that, go to *Attribute Manager* in the main plugin bar and click *Refresh*. You can control your added attributes and check whether the plugin has added something.
+To do that, go to *Attribute Manager* in the main bar of SketchUp. To see all attributes click *Refresh*. You can control your added attributes and check whether the plugin has added something.
 
 Attributes like *PolygonID* and *LinearRingID* should be erased before export into CityGML.
 
-.. image:: resources/18.jpg
+.. image:: resources/18a.jpg
     :width: 100%
 
 
