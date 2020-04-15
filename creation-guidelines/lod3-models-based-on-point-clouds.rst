@@ -195,18 +195,30 @@ Attributes like *PolygonID* and *LinearRingID* should be erased before export in
 The validation of model structure can be done via Model Explorer located on the main SketchUp bar. Before validation, it is recommended to erase all elements not relevant to the export (e.g. point cloud).
 In case of modelling LoD3 object, using MultiSurface geometry and using Building only as container for attributes (not for geometry) the strucuture should be similar to the image below.  
 
-.. image:: resources/18b.jpg
+.. image:: resources/18b.JPG
     :width: 100%
 
 After clicking on the arrow located in the column gml:id, the structure of the object reveals.
 
-.. image:: resources/18c.jpg
+.. image:: resources/18c.JPG
     :width: 100%
+
+
+Additional attributes could be added manually to the model using Edit Attributes window. For example, one can add Date of model creation to the edited object (be careful to use right type of date yyyy-mm-dd, i.e. 2019-09-25).
+
+.. image:: resources/18d.jpg
+    :width: 100% 
+
+Other possibiltiy to add new attribute, is to use built-in plugin's function. One can access this feature by hoovering on *Attributes* and then *Left Click* on *MeasuredHeight*. This step adds new CityGMl attribute with measured realtive height from the finished 3D SketchUp model.  	
 	
+.. image:: resources/18e.jpg
+    :width: 100% 	
+
+
 Data export
 -----------
 
-To export files, you have to select an icon with green arrow nad GML sign and select the folder to save it.
+To export files, you have to select an icon with green arrow and GML sign and select the folder to save it.
 
 Then, the CityGML Export window is opened. You can tick here *Logging* to see logs while exporting.
 
