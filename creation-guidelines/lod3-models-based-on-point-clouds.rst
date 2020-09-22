@@ -134,6 +134,8 @@ Moreover, the SketchUp community (SketchUp extensions) offers a lot of plugins t
 - *bit tools 1001*
 - *Weld*
 
+Surfaces and other modeled objects, such as building installation, should be represented with their corresponding material. Therefore, the materials from the SketchUp Default Tray can be used. Additional materials can be downloaded from web pages and included in SketchUp. Useful tutorials are  `"Top 8 Websites FOR TEXTURES AND MATERIALS for SketchUp" <https://www.youtube.com/watch?v=IuiUz7t2EGM>`_ and `"Creating CUSTOM MATERIALS in SketchUp" <https://www.youtube.com/watch?v=0iLWv7_-fQY>`_ .
+
 
 Example for window creation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
