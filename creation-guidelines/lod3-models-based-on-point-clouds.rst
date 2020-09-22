@@ -14,7 +14,6 @@ Requirements
 
 Useful Plugins
 
-- tba
 - `curic Mirror <https://extensions.sketchup.com/extension/72c3aa60-da8e-4a56-9f70-ab4bc706060c/curic-mirror>`_
 - `place Shapes <https://extensions.sketchup.com/extension/391ea6ea-9f03-4e5a-bdaf-219cda9817ee/place-shapes-toolbar>`_
 - `1001bit tools <https://extensions.sketchup.com/extension/e5b1211a-8d1a-4813-bdc3-b321e5477d7b/1001bit-tools-freeware>`_
