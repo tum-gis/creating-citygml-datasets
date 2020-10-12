@@ -126,7 +126,7 @@ To easily operate on a building, you can explode a group(*Right Click-> Explode*
 .. image:: resources/12.jpg
     :width: 100%
 
-Further modelling should be done with the aid of a point cloud, an external preview of a point cloud and photos or mesh from Google Earth Pro.
+Further modelling should be done with the aid of a point cloud, an external preview of a point cloud and photos or mesh from Google Earth Pro. Additionally, the website `Mapillary <https://www.mapillary.com/app/?lat=20&lng=0.0001&z=1.5&focus=map&mapStyle=Mapillary+satellite>`_ provides crowdsourced street-level images.
 Not every part of a building has to be done from scratch. A wide repository is available on SketchUp Warehouse where tiny and big elements can be downloaded.
 
 Moreover, the SketchUp community (SketchUp extensions) offers a lot of plugins tailored to the user's needs. One of the most interesting for building modelling:
