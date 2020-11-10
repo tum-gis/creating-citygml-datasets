@@ -6,17 +6,16 @@
 Guideline Collection: Creating CityGML Datasets
 ===============================================
 
-The objective of this repository is to collect guidelines
-on the different ways to create `CityGML`_ datasets.
+This repository collects guidelines on the different ways to create `CityGML`_ datasets.
 
 .. _CityGML: https://www.opengeospatial.org/standards/citygml
 
 
 .. toctree::
    :maxdepth: 2
-   :caption: Software
+   :caption: Preliminary
 
-   software/software
+   preliminary/software
 
 
 .. toctree::
@@ -25,9 +24,3 @@ on the different ways to create `CityGML`_ datasets.
 
    creation-guidelines/lod3-models-based-on-point-clouds
    creation-guidelines/other-guidelines
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Validation
-
-   validation/validating-datasets

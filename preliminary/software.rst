@@ -6,6 +6,14 @@ In the following the used software is listed and described in more detail.
 Feature Manipulation Engine (FME)
 ---------------------------------
 
+The tool `FME`_ enables the creation of complex data conversion workflows by combining a `multitude of transformers <https://www.safe.com/transformers/>`_ supporting a range of `formats <https://www.safe.com/integrate/>`_.
+FME can be used to prepare datasets for manual modeling or even to develop entire workbenches for creating new models.
+
+.. image:: resources/FME_Workbench.png
+    :width: 100%
+
+.. _`FME`: https://www.safe.com/fme/
+
 SketchUp
 --------
 
@@ -42,16 +50,6 @@ A detailed comparison between licenses can be found in this `document`_.
 
 .. _`CityEditor`: https://www.3dis.de/cityeditor/
 .. _`document`: https://www.3dis.de/files/cityeditor/produktinformationen/Features_Pricing.pdf?page=7
-
-
-3difier
--------
-
-3D City Database: Importer Exporter
------------------------------------
-
-citygml4j
----------
 
 
 General Overviews
