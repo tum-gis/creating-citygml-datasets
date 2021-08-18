@@ -141,6 +141,36 @@ At the beginning, the layer of the point cloud can be hidden. Click on the LoD1 
 .. image:: resources/modeling/walls_ground_layer0.png
     :width: 100%
 
+The layer *Unclassified.LoD1* can then be hidden but contains the original LoD1 building as a backup, in case it is needed later. The other one can be changed while modeling the walls and the ground surface.
+
+.. image:: resources/modeling/walls_ground_layer0_explode.png
+    :width: 100%
+
+Choose one of the edges of the LoD1 building and position the coordinate system there, so the origin is at the lower corner and the blue axis lies on the vertical edge (*Tools -> Axes*). This is helpful for the modeling, as the edges of the building can now be drawn parallel to the blue axis.
+
+.. image:: resources/modeling/walls_ground_building_edge.png
+    :width: 100%
+
+Use the *Circle* tool to draw a coplanar surface for preparing the ground surface. The center of the circle is the origin of the coordinate system from the previous step and the circle is perpendicular to the blue axis.
+
+.. image:: resources/modeling/walls_ground_origin_location.png
+    :width: 100%
+
+Now use the *Extend Edge to Edge* or *Face* tool for all the building edges, so they reach the circular ground surface. 
+
+.. image:: resources/modeling/walls_ground_create_ground_surface.png
+    :width: 100%
+
+Change the perspective, so you look to the ground surface from underneath and draw lines between the end points of the edges. These lines lie on the ground surface and mark the position of the building edges.
+
+.. image:: resources/modeling/walls_ground_perspective_below_ground_surface.png
+    :width: 100%
+
+.. image:: resources/modeling/walls_ground_surface_cutout.png
+    :width: 100%
+
+Erase the edges of the exploded LoD1 (on *Layer0*) and the small edges from the *Extend Edges* command, so you have no vertical lines any more, but only the horizontal lines of the ground surface. Also, erase the upper horizontal lines of the exploded LoD1. On *Layer0* only the ground surface and the circular surface are left now. Next, define the level of the ground surface. Therefore, check the point cloud and derive the lowest level of the ground surrounding the building. 
+
 
 Example for window creation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
