@@ -214,6 +214,28 @@ If necessary, you can mark the wall surface, position a guiding line on the unde
 
 This should be controlled for the façade that fronts the street and eventually for visible flanking walls, too. Here, the position of the wall was not changed.
 
+
+Roof
+^^^^
+
+The height, angle and position of the roof can be found by means of the point cloud. One should keep in mind that the position of the roof in the point cloud can differ from its real position on the building, as the roof is scanned with an aerial scan, whereas the façade is scanned from the street. When both scans are combined, small displacements can occur. Points of other buildings can be *unlocked* and *erased* so they do not disturb.
+
+.. image:: resources/modeling/roof/01.png
+    :width: 100%
+
+For finding the right angle of a pitched roof, the *Tape Measure Tool* might help. Position a guiding line on the upper horizontal edge of one flanking wall. Check that under Camera *Parallel projection* and not *Perspective* is chosen. With the *Pan* tool, find a suited perspective onto the wall. With the *Rotate* tool, rotate the guiding line until it has the angle of the roof (the rotation should be on the wall surface). You can repeat the same for the other side. The intersection points of the guiding lines help to draw the lines of the roof.
+
+.. image:: resources/modeling/roof/02.png
+    :width: 100%
+
+.. image:: resources/modeling/roof/03.png
+    :width: 100%
+
+If a roof surface is not created automatically you might have to draw another diagonal line so two triangular faces are created. If you model dormers on a roof surface afterwards, it might indeed be recommendable to have one entire and planar roof surface underneath, which does not consist of two or more triangular surfaces.
+
+.. image:: resources/modeling/roof/04.png
+    :width: 100%
+
 Example for window creation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
