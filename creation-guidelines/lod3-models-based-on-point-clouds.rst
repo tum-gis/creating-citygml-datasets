@@ -171,6 +171,48 @@ Change the perspective, so you look to the ground surface from underneath and dr
 
 Erase the edges of the exploded LoD1 (on *Layer0*) and the small edges from the *Extend Edges* command, so you have no vertical lines any more, but only the horizontal lines of the ground surface. Also, erase the upper horizontal lines of the exploded LoD1. On *Layer0* only the ground surface and the circular surface are left now. Next, define the level of the ground surface. Therefore, check the point cloud and derive the lowest level of the ground surrounding the building. 
 
+.. image:: resources/modeling/walls_ground_surface/08.png
+    :width: 100%
+
+.. image:: resources/modeling/walls_ground_surface/09.png
+    :width: 100%
+
+If the ground surface is not at the lowest level you move it along the blue axis, otherwise you can leave it in its position. The following illustrations from the sig3d guide also represent how the ground surface should be modeled. [`sid3d <http://en.wiki.quality.sig3d.org/index.php/Modeling_Guide_for_3D_Objects_-_Part_2:_Modeling_of_Buildings_(LoD1,_LoD2,_LoD3)>`_]
+
+.. image:: resources/modeling/walls_ground_surface/10.png
+    :width: 45%
+.. image:: resources/modeling/walls_ground_surface/11.png
+    :width: 45%
+
+Compare the height of the edges of the LoD1 building with the point cloud (here, it is necessary to turn the *Unclassified.LoD1* layer on again). Check if the edges correspond to the point cloud. The LOD1 building has one average height, so in few cases the corners of a building are not good represented (e.g. if the building has two parts with different heights). With the *Tape Measure Tool*, measure the height from the ground surface to the upper corners of the facade. Find an average height for all building edges. This value is then used for drawing all edges, so they have the same height (here e.g., 11.29m is used).
+
+.. image:: resources/modeling/walls_ground_surface/12.png
+    :width: 100%
+
+Now, from the lines on the ground, draw the new building edges, using the before chosen height.
+
+.. image:: resources/modeling/walls_ground_surface/13.png
+    :width: 100%
+
+Draw lines between the upper ends of the edges. If everything went right so far, SketchUp automatically creates surfaces between the edges. They are the walls of the building.
+
+.. image:: resources/modeling/walls_ground_surface/14.png
+    :width: 100%
+
+Now it is necessary to control, whether the walls are in an adequate position. You can erase the upper horizontal surface, which was created automatically, turn on the *Pointcloud* layer and from an aerial perspective check if there are many points, which lie behind the modeled wall. Approximately half of the points should lie before, half of the points behind the wall. It should be in a position so it is for instance possible to recognize the position of windows, etc.
+
+.. image:: resources/modeling/walls_ground_surface/15.png
+    :width: 100%
+
+.. image:: resources/modeling/walls_ground_surface/16.png
+    :width: 100%
+
+If necessary, you can mark the wall surface, position a guiding line on the under perpendicular building edge and with the *Move* tool move the wall along the guiding line and adjust its position.
+
+.. image:: resources/modeling/walls_ground_surface/17.png
+    :width: 100%
+
+This should be controlled for the façade that fronts the street and eventually for visible flanking walls, too. Here, the position of the wall was not changed.
 
 Example for window creation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
