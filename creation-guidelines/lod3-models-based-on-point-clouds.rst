@@ -181,20 +181,20 @@ Go to a web page of SketchUp Warehouse and find a window by typing "window" in t
 
 After that, you can simply open the downloaded file and select whole object and use ctrl+c and paste it into an open building project using ctrl+v.
 
-.. image:: resources/window/01.jpg
+.. image:: resources/modeling/window/01.jpg
     :width: 100%
 
 Mostly users create such objects as Components or Groups. To assure that the local axis of the imported window is in the right place you can explode window Group/Component (similar to with building in LoD1 before).
 After that, you can create Component again and set the local axis - remember that window should later align with a wall or roof on which you will place it.
 
-.. image:: resources/window/02.jpg
+.. image:: resources/modeling/window/02.jpg
     :width: 100%
 
 If an axis was properly assigned and a wall is created it is now possible to quickly place the window on the wall. Select the surface and then component and go to *Extensions-> Chris Fullmer Tools, Component Onto Faces*. Thanks to that window is aligned with a wall.
 
 Now you can move and scale it with native *Move* and *Scale* tool. In order to cut an opening for a window the easiest way is to draw a polygon bounding the component and erase a face inside this polygon.
 
-.. image:: resources/window/03.jpg
+.. image:: resources/modeling/window/03.jpg
     :width: 100%
 
 The current object is conformant with SketchUp and aligns the bounding surface properly. However, now it is important to make the window a semantic, CityGML Window.
@@ -203,7 +203,7 @@ To do that *Right Click-> [CityEditor.jpg GroupType ->Window*. Then you have to 
 
 That is why all groups should be also grouped within the SketchUp project(Windows, BuildingInstallations, etc.). Surfaces like walls, roofs, and ground do not have to be grouped as they can be assigned from a surface position.
 
-.. image:: resources/window/04.jpg
+.. image:: resources/modeling/window/04.jpg
     :width: 100%
 
 
@@ -212,12 +212,12 @@ Closing the model
 
 The similar steps have to be done for each new object within SketchUp. To assure CityGML validity each surface has to be assigned to specific CityGML configuration. Useful website: `sig3d.org <http://en.wiki.quality.sig3d.org/index.php/Modeling_Guide_for_3D_Objects_-_Part_2:_Modeling_of_Buildings_(LoD1,_LoD2,_LoD3)>`_
 
-.. image:: resources/closing/01.jpg
+.. image:: resources/modeling/closing/01.jpg
     :width: 100%
 
 Having all objects created and assigned, you can now collect them into one Building object by selecting all items and grouping them. To the group object you can add attributes (*Right Click-> Attributes -> Edit Attributes*) or paste attributes copied before from LoD1 building (*Right Click-> Attributes -> Paste Attributes*).
 
-.. image:: resources/closing/02.jpg
+.. image:: resources/modeling/closing/02.jpg
     :width: 100%
 
 After that, it is important to erase all automatic IDs created within a group to avoid redundant IDs within a model and in comparison with other buildings.
@@ -225,29 +225,29 @@ To do that, go to *Attribute Manager* in the main bar of SketchUp. To see all at
 
 Attributes like *PolygonID* and *LinearRingID* should be erased before export into CityGML.
 
-.. image:: resources/closing/03.jpg
+.. image:: resources/modeling/closing/03.jpg
     :width: 100%
 
 The validation of model structure can be done via Model Explorer located on the main SketchUp bar. Before validation, it is recommended to erase all elements not relevant to the export (e.g. point cloud).
 In case of modeling LoD3 object, using MultiSurface geometry and using Building only as container for attributes (not for geometry) the strucuture should be similar to the image below.  
 
-.. image:: resources/closing/04.jpg
+.. image:: resources/modeling/closing/04.jpg
     :width: 100%
 
 After clicking on the arrow located in the column gml:id, the structure of the object reveals.
 
-.. image:: resources/closing/05.jpg
+.. image:: resources/modeling/closing/05.jpg
     :width: 100%
 
 
 Additional attributes could be added manually to the model using Edit Attributes window. For example, one can add Date of model creation to the edited object (be careful to use right type of date yyyy-mm-dd, i.e. 2019-09-25).
 
-.. image:: resources/closing/06.jpg
+.. image:: resources/modeling/closing/06.jpg
     :width: 100% 
 
 Other possibiltiy to add new attribute, is to use built-in plugin's function. One can access this feature by hoovering on *Attributes* and then *Left Click* on *MeasuredHeight*. This step adds new CityGML attribute with measured realtive height from the finished 3D SketchUp model.  	
 	
-.. image:: resources/closing/07.jpg
+.. image:: resources/modeling/closing/07.jpg
     :width: 100% 	
 
 
