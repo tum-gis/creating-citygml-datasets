@@ -236,8 +236,20 @@ If a roof surface is not created automatically you might have to draw another di
 .. image:: resources/modeling/roof/04.png
     :width: 100%
 
-Example for window creation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Windows
+^^^^^^^
+
+To insert windows or doors, the openings in the wall surface can be drawn first. The point cloud helps to find the position of the openings. Guiding lines can also be a support. When positioning these lines, it is important to ensure that they are lying on the wall surface (if this is the case, the blue octothorp is shown).
+
+.. image:: resources/modeling/windows/01.png
+    :width: 100%
+
+.. image:: resources/modeling/windows/02.png
+    :width: 100%
+
+
+Example for window creation in SketchUp
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To create a detailed window you can create by yourself or use the SketchUp Warehouse. Here, I would like to present an example with a window from SketchUp Warehouse.
 
@@ -245,20 +257,20 @@ Go to a web page of SketchUp Warehouse and find a window by typing "window" in t
 
 After that, you can simply open the downloaded file and select whole object and use ctrl+c and paste it into an open building project using ctrl+v.
 
-.. image:: resources/modeling/window/01.jpg
+.. image:: resources/modeling/example_window_creation/01.jpg
     :width: 100%
 
 Mostly users create such objects as Components or Groups. To assure that the local axis of the imported window is in the right place you can explode window Group/Component (similar to with building in LoD1 before).
 After that, you can create Component again and set the local axis - remember that window should later align with a wall or roof on which you will place it.
 
-.. image:: resources/modeling/window/02.jpg
+.. image:: resources/modeling/example_window_creation/02.jpg
     :width: 100%
 
 If an axis was properly assigned and a wall is created it is now possible to quickly place the window on the wall. Select the surface and then component and go to *Extensions-> Chris Fullmer Tools, Component Onto Faces*. Thanks to that window is aligned with a wall.
 
 Now you can move and scale it with native *Move* and *Scale* tool. In order to cut an opening for a window the easiest way is to draw a polygon bounding the component and erase a face inside this polygon.
 
-.. image:: resources/modeling/window/03.jpg
+.. image:: resources/modeling/example_window_creation/03.jpg
     :width: 100%
 
 The current object is conformant with SketchUp and aligns the bounding surface properly. However, now it is important to make the window a semantic, CityGML Window.
@@ -267,7 +279,7 @@ To do that *Right Click-> [CityEditor.jpg GroupType ->Window*. Then you have to 
 
 That is why all groups should be also grouped within the SketchUp project(Windows, BuildingInstallations, etc.). Surfaces like walls, roofs, and ground do not have to be grouped as they can be assigned from a surface position.
 
-.. image:: resources/modeling/window/04.jpg
+.. image:: resources/modeling/example_window_creation/04.jpg
     :width: 100%
 
 
