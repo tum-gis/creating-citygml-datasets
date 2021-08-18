@@ -116,9 +116,7 @@ Steps performed by the plugin are displayed in a window.
 Modeling
 ---------
 
-LoD1 building is imported to assure ground level. LoD1 walls and roof mostly are not relevant while creating LoD3 and thus can be erased at the beginning.
-
-To easily operate on a building, you can explode a group(*Right Click-> Explode*). However, before doing that it is relevant to copy attributes from a model (*Right Click-> Attributes -> Copy to Clipboard*). At the end of objects modeling, they should be merged in a group and attributes can be reassigned.
+The LoD1 building and the point cloud are imported as a starting point for the modeling.  First, it is relevant to copy attributes from the LoD1 building (*Right Click-> Attributes -> Copy to Clipboard*). At the end of objects modeling, the building is merged in a group and the attributes can be reassigned.
 
 .. image:: resources/modeling_explode.jpg
     :width: 100%
@@ -128,12 +126,20 @@ To easily operate on a building, you can explode a group(*Right Click-> Explode*
 Further modeling should be done with the aid of a point cloud, an external preview of a point cloud and photos or mesh from Google Earth Pro. Additionally, the website `Mapillary <https://www.mapillary.com/app/?lat=20&lng=0.0001&z=1.5&focus=map&mapStyle=Mapillary+satellite>`_ provides crowdsourced street-level images.
 Not every part of a building has to be done from scratch. A wide repository is available on SketchUp Warehouse where tiny and big elements can be downloaded.
 
-Moreover, the SketchUp community (SketchUp extensions) offers a lot of plugins tailored to the user's needs. One of the most interesting for building modeling:
+Moreover, the SketchUp community (SketchUp extensions) offers a lot of plugins tailored to the user's needs. Some of the most interesting for building modeling are:
 - *Chris Fullmer Tools, Component Onto Faces*
 - *bit tools 1001*
 - *Weld*
 
-Surfaces and other modeled objects, such as building installation, should be represented with their corresponding material. Therefore, the materials from the SketchUp Default Tray can be used. Additional materials can be downloaded from web pages and included in SketchUp. Useful tutorials are  `"Top 8 Websites FOR TEXTURES AND MATERIALS for SketchUp" <https://www.youtube.com/watch?v=IuiUz7t2EGM>`_ and `"Creating CUSTOM MATERIALS in SketchUp" <https://www.youtube.com/watch?v=0iLWv7_-fQY>`_ .
+Walls and ground surface
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+The walls and the ground surface are modeled based on the LoD1 building and the point cloud. The layers which are created automatically are *Layer0*, *PointCloud* and *Unclassified.LoD1*. In a later step, when assigning the building components to CityGML, further layers are created automatically. Apart from this, it is not required to create additional layers. *Layer0* should remain the current layer during the modeling.
+
+At the beginning, the layer of the point cloud can be hidden. Click on the LoD1 building and copy it (*Edit -> Copy*) and then paste it (*Edit -> Paste in Place*). Edit the new one with *Double Click*, mark all entities with Double Click and assign them to *Layer0*. Explode the LoD1 building on *Layer0*.
+
+.. image:: resources/modeling/walls_ground_layer0.png
+    :width: 100%
 
 
 Example for window creation
