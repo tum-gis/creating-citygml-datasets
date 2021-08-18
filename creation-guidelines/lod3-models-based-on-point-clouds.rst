@@ -287,14 +287,35 @@ Now you can move and scale it with native *Move* and *Scale* tool. In order to c
 .. image:: resources/modeling/windows/creation_sketchup_warehouse/03.jpg
     :width: 100%
 
-The current object is conformant with SketchUp and aligns the bounding surface properly. However, now it is important to make the window a semantic, CityGML Window.
+Assignment to CityGML
+^^^^^^^^^^^^^^^^^^^^^
+The exemplary windows are conformant with SketchUp and align the bounding surface properly. However, now it is important to make them semantic, CityGML Windows.
 
 To do that *Right Click-> [CityEditor.jpg GroupType ->Window*. Then you have to specify what kind of opening is that -  *Right Click-> [CityEditor.jpg Opening Boundary Surface Type ->WallSurface* and at what level of deitails *Right Click-> [CityEditor.jpg LoD -> 3* as well as *Right Click-> [CityEditor.jpg Surface Type ->lodXMultiSurface*.
 
-That is why all groups should be also grouped within the SketchUp project(Windows, BuildingInstallations, etc.). Surfaces like walls, roofs, and ground do not have to be grouped as they can be assigned from a surface position.
-
-.. image:: resources/modeling/windows/creation_sketchup_warehouse/04.jpg
+.. image:: resources/modeling/assignment_to_citygml/01.jpg
     :width: 100%
+
+As the windows, so should all groups and components be grouped and assigned with the CityEditor plugin (Windows, BuildingInstallations, etc.) in order to be compatible with CityGML. 
+Surfaces like walls, roofs, and ground do not have to be grouped, but also each surface needs to be assigned to specific CityGML configuration to assure CityGML validity. A useful website is sig3d.org.
+
+During the assignment, new layers are created automatically (GroundSurface.LoD3, OuterCeiling.LoD3, Unclassified.LoD3, etc.) The following table shows possible examples.
+
++-----------------------+----------------------+---------------------------------+-----+------------------+
+|                       |      GroupType       | (Opening) Boundary Surface Type | LoD |   Surface Type   |
++=======================+======================+=================================+=====+==================+
+| Window                | Window               | WallSurface                     | 3   | lodXMultiSurface |
++-----------------------+----------------------+---------------------------------+-----+------------------+
+| Door                  | Door                 | WallSurface                     | 3   | lodXMultiSurface |
++-----------------------+----------------------+---------------------------------+-----+------------------+
+| Balcony, stairs, etc. | BuildingInstallation | Unclassified                    | 3   | lodXGeometry     |
++-----------------------+----------------------+---------------------------------+-----+------------------+
+| Wall Surface          | –                    | WallSurface                     | 3   | lodXMultiSurface |
++-----------------------+----------------------+---------------------------------+-----+------------------+
+| Roof Surface          | –                    | RoofSurface                     | 3   | lodXMultiSurface |
++-----------------------+----------------------+---------------------------------+-----+------------------+
+
+Switching the different layers in SketchUp on and off can help to check whether all the components and surfaces have been assigned to CityGML configurtions already.
 
 
 Closing the model
