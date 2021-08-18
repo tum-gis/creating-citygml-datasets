@@ -33,7 +33,7 @@ Data import
 After installing and activating SketchUp and the CityEditor plugin, the import of datasets is possible.
 Select *CityEditor Importer* to run the importing window.
 
-.. image:: resources/cityeditor_import.jpg
+.. image:: resources/import/01.jpg
     :width: 100%
 
 Click on the building icon at the top-right to add CityGML objects (formats like .xml, .gml, .shp, .dxf, and other avalaible). It is possible to add single files (under *File...*) or several (*Directory...*).
@@ -42,7 +42,7 @@ After a successful selection, the building dataset should be listed in the gray 
 
 A similar operation should be performed for adding point clouds. The plugin allows to add point clouds **only in .xyz or .csv format** and **number of points should be lower than 200 000** (for **best performance =<150 000** were used within this tutorial). Instead of building an icon you should choose a small squares icon, second from bottom-right. Again, there is an option to add a single object or a whole directory.
 
-.. image:: resources/cityeditor_import_selection.jpg
+.. image:: resources/import/02.jpg
     :width: 100%
 
 Click *Next*. Then, in section *Preparsing* click *Next* again to pre-validate your data. Depending on data it can take to several minutes, the process can be tracked in the process bar.
@@ -50,7 +50,7 @@ Preparsing results contain information about the model bounding box, width, heig
 
 Click *Next* to proceed.
 
-.. image:: resources/cityeditor_import_preparsing.jpg
+.. image:: resources/import/03.jpg
     :width: 100%
 
 *Options* window contains 3 sections: *Buildings/CityGML*, *Pointcloud* and *Expert Options*. If more types of datasets are chosen the sections expand accordingly.
@@ -63,7 +63,7 @@ To load an appearance of buildings select *Appearance Theme* - in this example t
 
 To import attributes of objects tick *Import Attributes*.
 
-.. image:: resources/cityeditor_import_options_buildings.jpg
+.. image:: resources/import/04.jpg
     :width: 100%
 
 Go to the Pointcloud section now. Here you can select your preferences regarding point cloud representation - plus or cube (*Point Representation*).
@@ -75,21 +75,21 @@ More about Voxel : (`Voxel on Wikipedia <https://en.wikipedia.org/wiki/Voxel>`_,
 )
 
 
-.. image:: resources/cityeditor_import_options_pointcloud.jpg
+.. image:: resources/import/05.jpg
     :width: 100%
 
 *Expert Options* bar is relevant only if you want to import higher detailed buildings or materials. Also, there is an option to validate GML Namespaces at this point. The default values are sufficient to proceed.
 
 Now, you can click *Next* to continue.
 
-.. image:: resources/cityeditor_import_options_expert.jpg
+.. image:: resources/import/06.jpg
     :width: 100%
 
 In *Coordinates* window you can check your coordinate system (*Coordinate System* section) or integrate your data with already existing SketchUp project (*Model Integration*) and set timezone (*Timezone*). In this example, the plugin reads everything automatically.
 
 Click *Next* to continue.
 
-.. image:: resources/cityeditor_import_coordinates.jpg
+.. image:: resources/import/07.jpg
     :width: 100%
 
 The next window allows us to filter out only relevant data from the whole dataset simply by *Region* or *Gridding* definition. This part also can serve as a preview of data extend thanks to the option of base map selection (*Map Source*), here OpenStreetMap selected.
@@ -97,19 +97,19 @@ Filtering at this point is not recommended - it is better to prepare data before
 
 Click *Next* to continue.
 
-.. image:: resources/cityeditor_import_region.jpg
+.. image:: resources/import/08.jpg
     :width: 100%
 
 In the following window, you can specify a saving path. You can tick the option below to save log file as text which can be found in the same folder.
 
 Click *Next* and then *Finish* to load data.
 
-.. image:: resources/cityeditor_import_output.jpg
+.. image:: resources/import/09.jpg
     :width: 100%
 
 Steps performed by the plugin are displayed in a window.
 
-.. image:: resources/cityeditor_import_finished.jpg
+.. image:: resources/import/10.jpg
     :width: 100%
 
 
@@ -258,19 +258,19 @@ To export files, you have to select an icon with green arrow and GML sign and se
 
 Then, the CityGML Export window is opened. You can tick here *Logging* to see logs while exporting.
 
-.. image:: resources/export_general.jpg
+.. image:: resources/export/01.jpg
     :width: 100%
 
 In *CityGML Options* section you make further configuration of exported CityGML. Very important is to type in *Appearance Theme* name and remember it in case of further importing it to citydb or other environments.
 
 As ID for specific Polygons, LinearRings were deleted we have to create them again by ticking option *Generate IDs for all elements* this assures uniqueness. Just to be sure, we can select also *Check and correct IDs* thanks to that exporting algorithm will repair issues if they will appear.
 
-.. image:: resources/export_options.jpg
+.. image:: resources/02.jpg
     :width: 100%
 
 Within section *Coordinate System* you can check whether the coordinate system is appropriate and additionally you can apply *Yaw* (offset). In *Textures* tab you can check currently exporting materials and saving folder for those.
 
 To continue select *Start Export*.
 
-.. image:: resources/export_finished.jpg
+.. image:: resources/export/03.jpg
     :width: 100%
