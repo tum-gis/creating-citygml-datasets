@@ -30,20 +30,19 @@ Within this workflow pipeline following datasets were used:
 Data import
 -----------
 
-After installation and activation of CityEditor plugin and SketchUp the import of datasets is possible.
-
+After installing and activating SketchUp and the CityEditor plugin, the import of datasets is possible.
 Select *CityEditor Importer* to run the importing window.
 
-.. image:: resources/1.jpg
+.. image:: resources/cityeditor_import.jpg
     :width: 100%
 
 Click on the building icon at the top-right to add CityGML objects (formats like .xml, .gml, .shp, .dxf, and other avalaible). It is possible to add single files (under *File...*) or several (*Directory...*).
 
-After successful selection buildings should be listed within the grey area of a window.
+After a successful selection, the building dataset should be listed in the gray area of a window.
 
-A similar operation should be done for adding point cloud. The plugin allows to add point clouds **only in .xyz or .csv format** and **number of points should be lower than 200 000** (for **best performance =<150 000** were used within this tutorial). Instead of building an icon you should choose a small squares icon, second from bottom-right. Again, there is an option to add a single object or a whole directory.
+A similar operation should be performed for adding point clouds. The plugin allows to add point clouds **only in .xyz or .csv format** and **number of points should be lower than 200 000** (for **best performance =<150 000** were used within this tutorial). Instead of building an icon you should choose a small squares icon, second from bottom-right. Again, there is an option to add a single object or a whole directory.
 
-.. image:: resources/2.jpg
+.. image:: resources/cityeditor_import_selection.jpg
     :width: 100%
 
 Click *Next*. Then, in section *Preparsing* click *Next* again to pre-validate your data. Depending on data it can take to several minutes, the process can be tracked in the process bar.
@@ -51,7 +50,7 @@ Preparsing results contain information about the model bounding box, width, heig
 
 Click *Next* to proceed.
 
-.. image:: resources/3.jpg
+.. image:: resources/cityeditor_import_preparsing.jpg
     :width: 100%
 
 *Options* window contains 3 sections: *Buildings/CityGML*, *Pointcloud* and *Expert Options*. If more types of datasets are chosen the sections expand accordingly.
@@ -64,7 +63,7 @@ To load an appearance of buildings select *Appearance Theme* - in this example t
 
 To import attributes of objects tick *Import Attributes*.
 
-.. image:: resources/4.jpg
+.. image:: resources/cityeditor_import_options_buildings.jpg
     :width: 100%
 
 Go to the Pointcloud section now. Here you can select your preferences regarding point cloud representation - plus or cube (*Point Representation*).
@@ -76,21 +75,21 @@ More about Voxel : (`Voxel on Wikipedia <https://en.wikipedia.org/wiki/Voxel>`_,
 )
 
 
-.. image:: resources/5.jpg
+.. image:: resources/cityeditor_import_options_pointcloud.jpg
     :width: 100%
 
 *Expert Options* bar is relevant only if you want to import higher detailed buildings or materials. Also, there is an option to validate GML Namespaces at this point. The default values are sufficient to proceed.
 
 Now, you can click *Next* to continue.
 
-.. image:: resources/6.jpg
+.. image:: resources/cityeditor_import_options_expert.jpg
     :width: 100%
 
 In *Coordinates* window you can check your coordinate system (*Coordinate System* section) or integrate your data with already existing SketchUp project (*Model Integration*) and set timezone (*Timezone*). In this example, the plugin reads everything automatically.
 
 Click *Next* to continue.
 
-.. image:: resources/7.jpg
+.. image:: resources/cityeditor_import_coordinates.jpg
     :width: 100%
 
 The next window allows us to filter out only relevant data from the whole dataset simply by *Region* or *Gridding* definition. This part also can serve as a preview of data extend thanks to the option of base map selection (*Map Source*), here OpenStreetMap selected.
@@ -98,19 +97,19 @@ Filtering at this point is not recommended - it is better to prepare data before
 
 Click *Next* to continue.
 
-.. image:: resources/8.jpg
+.. image:: resources/cityeditor_import_region.jpg
     :width: 100%
 
 In the following window, you can specify a saving path. You can tick the option below to save log file as text which can be found in the same folder.
 
 Click *Next* and then *Finish* to load data.
 
-.. image:: resources/9.jpg
+.. image:: resources/cityeditor_import_output.jpg
     :width: 100%
 
 Steps performed by the plugin are displayed in a window.
 
-.. image:: resources/10.jpg
+.. image:: resources/cityeditor_import_finished.jpg
     :width: 100%
 
 
