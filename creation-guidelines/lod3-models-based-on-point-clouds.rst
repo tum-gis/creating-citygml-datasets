@@ -317,7 +317,31 @@ During the assignment, new layers are created automatically (GroundSurface.LoD3,
 
 Switching the different layers in SketchUp on and off can help to check whether all the components and surfaces have been assigned to CityGML configurtions already.
 
+Material assignment
+^^^^^^^^^^^^^^^^^^^
 
+To optically represent the material and color of building objects and surfaces, the materials from the SketchUp Default Tray can be used. Further materials can be downloaded from web pages and included in SketchUp. Useful tutorials are "`Top 8 Websites FOR TEXTURES AND MATERIALS for SketchUp <http://www.thesketchupessentials.com/top-8-websites-for-textures-and-materials-for-sketchup/>`_" and "`Creating CUSTOM MATERIALS in SketchUp <https://www.youtube.com/watch?v=0iLWv7_-fQY>`_" 
+
+In addition to this, also generic attributes can serve for representing materials. When no field data about the exact materials are available, photos can form as baseline for the assignment.
+
+The data of a work which investigated the reflectance of different building materials in the city of Karlsruhe are summarized in the KLUM library (https://github.com/rebeccailehag/KLUM_library/blob/master/KLUM.pdf). Another source of information about the reflectance of materials is the webpage Refractive Index (https://refractiveindex.info/).
+
+An exemplary assignment of attributes regarding the building materials, based on these both data, is shown in the following pictures.
+
+.. image:: resources/modeling/material_assignment/01.jpg
+    :width: 100%
+.. image:: resources/modeling/material_assignment/02.jpg
+    :width: 100%
+.. image:: resources/modeling/material_assignment/03.jpg
+    :width: 100%
+.. image:: resources/modeling/material_assignment/04.jpg
+    :width: 100%
+.. image:: resources/modeling/material_assignment/05.jpg
+    :width: 100%
+.. image:: resources/modeling/material_assignment/06.jpg
+    :width: 100%
+
+    
 Closing the model
 ^^^^^^^^^^^^^^^^^
 
