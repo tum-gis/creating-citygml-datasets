@@ -120,9 +120,9 @@ LoD1 building is imported to assure ground level. LoD1 walls and roof mostly are
 
 To easily operate on a building, you can explode a group(*Right Click-> Explode*). However, before doing that it is relevant to copy attributes from a model (*Right Click-> Attributes -> Copy to Clipboard*). At the end of objects modeling, they should be merged in a group and attributes can be reassigned.
 
-.. image:: resources/11.jpg
+.. image:: resources/modeling_explode.jpg
     :width: 100%
-.. image:: resources/12.jpg
+.. image:: resources/modeling_attributes.jpg
     :width: 100%
 
 Further modeling should be done with the aid of a point cloud, an external preview of a point cloud and photos or mesh from Google Earth Pro. Additionally, the website `Mapillary <https://www.mapillary.com/app/?lat=20&lng=0.0001&z=1.5&focus=map&mapStyle=Mapillary+satellite>`_ provides crowdsourced street-level images.
@@ -145,20 +145,20 @@ Go to a web page of SketchUp Warehouse and find a window by typing "window" in t
 
 After that, you can simply open the downloaded file and select whole object and use ctrl+c and paste it into an open building project using ctrl+v.
 
-.. image:: resources/13.jpg
+.. image:: resources/modeling_example_building.jpg
     :width: 100%
 
 Mostly users create such objects as Components or Groups. To assure that the local axis of the imported window is in the right place you can explode window Group/Component (similar to with building in LoD1 before).
 After that, you can create Component again and set the local axis - remember that window should later align with a wall or roof on which you will place it.
 
-.. image:: resources/14.jpg
+.. image:: resources/modeling_example_window_only.jpg
     :width: 100%
 
 If an axis was properly assigned and a wall is created it is now possible to quickly place the window on the wall. Select the surface and then component and go to *Extensions-> Chris Fullmer Tools, Component Onto Faces*. Thanks to that window is aligned with a wall.
 
 Now you can move and scale it with native *Move* and *Scale* tool. In order to cut an opening for a window the easiest way is to draw a polygon bounding the component and erase a face inside this polygon.
 
-.. image:: resources/15.jpg
+.. image:: resources/modeling_example_window_located_in_building.jpg
     :width: 100%
 
 The current object is conformant with SketchUp and aligns the bounding surface properly. However, now it is important to make the window a semantic, CityGML Window.
@@ -167,7 +167,7 @@ To do that *Right Click-> [CityEditor.jpg GroupType ->Window*. Then you have to 
 
 That is why all groups should be also grouped within the SketchUp project(Windows, BuildingInstallations, etc.). Surfaces like walls, roofs, and ground do not have to be grouped as they can be assigned from a surface position.
 
-.. image:: resources/16.jpg
+.. image:: resources/modeling_example_window_located_in_building_menu.jpg
     :width: 100%
 
 
@@ -176,7 +176,7 @@ Closing the model
 
 The similar steps have to be done for each new object within SketchUp. To assure CityGML validity each surface has to be assigned to specific CityGML configuration. Useful website: `sig3d.org <http://en.wiki.quality.sig3d.org/index.php/Modeling_Guide_for_3D_Objects_-_Part_2:_Modeling_of_Buildings_(LoD1,_LoD2,_LoD3)>`_
 
-.. image:: resources/17.jpg
+.. image:: resources/modeling_closing_building.jpg
     :width: 100%
 
 Having all objects created and assigned, you can now collect them into one Building object by selecting all items and grouping them. To the group object you can add attributes (*Right Click-> Attributes -> Edit Attributes*) or paste attributes copied before from LoD1 building (*Right Click-> Attributes -> Paste Attributes*).
