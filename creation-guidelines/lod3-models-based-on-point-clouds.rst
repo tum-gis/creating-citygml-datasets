@@ -297,7 +297,7 @@ To do that *Right Click-> [CityEditor.jpg GroupType ->Window*. Then you have to 
     :width: 100%
 
 As the windows, so should all groups and components be grouped and assigned with the CityEditor plugin (Windows, BuildingInstallations, etc.) in order to be compatible with CityGML. 
-Surfaces like walls, roofs, and ground do not have to be grouped, but also each surface needs to be assigned to specific CityGML configuration to assure CityGML validity. A useful website is sig3d.org.
+Surfaces like walls, roofs, and ground do not have to be grouped, but also each surface needs to be assigned to specific CityGML configuration to assure CityGML validity. A useful website is `sig3d.org <http://en.wiki.quality.sig3d.org/index.php/Modeling_Guide_for_3D_Objects_-_Part_2:_Modeling_of_Buildings_(LoD1,_LoD2,_LoD3)>`_
 
 During the assignment, new layers are created automatically (GroundSurface.LoD3, OuterCeiling.LoD3, Unclassified.LoD3, etc.) The following table shows possible examples.
 
@@ -341,16 +341,16 @@ An exemplary assignment of attributes regarding the building materials, based on
 .. image:: resources/modeling/material_assignment/06.jpg
     :width: 100%
 
-    
+
 Closing the model
 ^^^^^^^^^^^^^^^^^
 
-The similar steps have to be done for each new object within SketchUp. To assure CityGML validity each surface has to be assigned to specific CityGML configuration. Useful website: `sig3d.org <http://en.wiki.quality.sig3d.org/index.php/Modeling_Guide_for_3D_Objects_-_Part_2:_Modeling_of_Buildings_(LoD1,_LoD2,_LoD3)>`_
+The steps for an assignment to CityGML and eventually for a material assignment have to be done for each new object within SketchUp. 
 
 .. image:: resources/modeling/closing/01.jpg
     :width: 100%
 
-Having all objects created and assigned, you can now collect them into one Building object by selecting all items and grouping them. To the group object you can add attributes (*Right Click-> Attributes -> Edit Attributes*) or paste attributes copied before from LoD1 building (*Right Click-> Attributes -> Paste Attributes*).
+Having all objects created and assigned, you can then collect them into one Building object by selecting all items and grouping them. To the group object you can add attributes (*Right Click-> Attributes -> Edit Attributes*) or paste attributes copied before from LoD1 building (*Right Click-> Attributes -> Paste Attributes*).
 
 .. image:: resources/modeling/closing/02.jpg
     :width: 100%
@@ -358,13 +358,13 @@ Having all objects created and assigned, you can now collect them into one Build
 After that, it is important to erase all automatic IDs created within a group to avoid redundant IDs within a model and in comparison with other buildings.
 To do that, go to *Attribute Manager* in the main bar of SketchUp. To see all attributes click *Refresh*. You can control your added attributes and check whether the plugin has added something.
 
-Attributes like *PolygonID* and *LinearRingID* should be erased before export into CityGML.
+Attributes like *PolygonID* and *LinearRingID* should be erased before the export into CityGML.
 
 .. image:: resources/modeling/closing/03.jpg
     :width: 100%
 
-The validation of model structure can be done via Model Explorer located on the main SketchUp bar. Before validation, it is recommended to erase all elements not relevant to the export (e.g. point cloud).
-In case of modeling LoD3 object, using MultiSurface geometry and using Building only as container for attributes (not for geometry) the strucuture should be similar to the image below.  
+The validation of the model structure can be done via Model Explorer located on the main SketchUp bar. Before validation, it is recommended to erase all elements and layers not relevant to the export (e.g. the point cloud or the LoD1 building).
+In the case of modeling LoD3 objects by using MultiSurface geometry and using Building only as a container for attributes (not for geometry) the, structure should be similar to the image below.  
 
 .. image:: resources/modeling/closing/04.jpg
     :width: 100%
@@ -375,14 +375,22 @@ After clicking on the arrow located in the column gml:id, the structure of the o
     :width: 100%
 
 
-Additional attributes could be added manually to the model using Edit Attributes window. For example, one can add Date of model creation to the edited object (be careful to use right type of date yyyy-mm-dd, i.e. 2019-09-25).
+Additional attributes could be added manually to the model using Edit Attributes window. For example, one can add the Date of model creation to the edited object (be careful to use right type of date yyyy-mm-dd, i.e. 2019-09-25).
 
 .. image:: resources/modeling/closing/06.jpg
     :width: 100% 
 
-Other possibiltiy to add new attribute, is to use built-in plugin's function. One can access this feature by hoovering on *Attributes* and then *Left Click* on *MeasuredHeight*. This step adds new CityGML attribute with measured realtive height from the finished 3D SketchUp model.  	
+Another possibility to add a new attribute, is to use built-in plugin's function. One can access this feature by hoovering on *Attributes* and then *Left Click* on *MeasuredHeight*. This step adds a new CityGML attribute with the measured relative height from the finished 3D SketchUp model.  	
 	
 .. image:: resources/modeling/closing/07.jpg
+    :width: 100% 	
+
+An example of useful attributes for the modeled building is represented in the below pictures.
+
+.. image:: resources/modeling/closing/08.png
+    :width: 100% 	
+
+.. image:: resources/modeling/closing/09.png
     :width: 100% 	
 
 
