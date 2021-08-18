@@ -24,7 +24,7 @@ Input data
 Within this workflow pipeline following datasets were used:
 
 - XYZ (simplified pointcloud =< 150 000 points to assure SketchUp efficiency)
-- CityGML (selected input LoD1 to simplify modelling tasks later on)
+- CityGML (selected input LoD1 to simplify modeling tasks later on)
 - *possibly* already created adjacent LoD3 buildings
 
 Data import
@@ -114,7 +114,7 @@ Steps performed by the plugin are displayed in a window.
     :width: 100%
 
 
-Modelling
+Modeling
 ---------
 
 LoD1 building is imported to assure ground level. LoD1 walls and roof mostly are not relevant while creating LoD3 and thus can be erased at the beginning.
@@ -126,10 +126,10 @@ To easily operate on a building, you can explode a group(*Right Click-> Explode*
 .. image:: resources/12.jpg
     :width: 100%
 
-Further modelling should be done with the aid of a point cloud, an external preview of a point cloud and photos or mesh from Google Earth Pro. Additionally, the website `Mapillary <https://www.mapillary.com/app/?lat=20&lng=0.0001&z=1.5&focus=map&mapStyle=Mapillary+satellite>`_ provides crowdsourced street-level images.
+Further modeling should be done with the aid of a point cloud, an external preview of a point cloud and photos or mesh from Google Earth Pro. Additionally, the website `Mapillary <https://www.mapillary.com/app/?lat=20&lng=0.0001&z=1.5&focus=map&mapStyle=Mapillary+satellite>`_ provides crowdsourced street-level images.
 Not every part of a building has to be done from scratch. A wide repository is available on SketchUp Warehouse where tiny and big elements can be downloaded.
 
-Moreover, the SketchUp community (SketchUp extensions) offers a lot of plugins tailored to the user's needs. One of the most interesting for building modelling:
+Moreover, the SketchUp community (SketchUp extensions) offers a lot of plugins tailored to the user's needs. One of the most interesting for building modeling:
 - *Chris Fullmer Tools, Component Onto Faces*
 - *bit tools 1001*
 - *Weld*
@@ -194,7 +194,7 @@ Attributes like *PolygonID* and *LinearRingID* should be erased before export in
     :width: 100%
 
 The validation of model structure can be done via Model Explorer located on the main SketchUp bar. Before validation, it is recommended to erase all elements not relevant to the export (e.g. point cloud).
-In case of modelling LoD3 object, using MultiSurface geometry and using Building only as container for attributes (not for geometry) the strucuture should be similar to the image below.  
+In case of modeling LoD3 object, using MultiSurface geometry and using Building only as container for attributes (not for geometry) the strucuture should be similar to the image below.  
 
 .. image:: resources/18b.JPG
     :width: 100%
