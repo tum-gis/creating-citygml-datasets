@@ -394,6 +394,17 @@ An example of useful attributes for the modeled building is represented in the b
     :width: 100% 	
 
 
+Additional recommendations
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+Some additional general recommendations for the modeling in SketchUp are:
+
+* Use shortcuts for the navigation in SketchUp and keyboard combinations for utilizing the tools.
+* It might be a help to switch Camera on the main SketchUp bar from *Perspective* to *Parallel Projection*.
+* If the cursor doesn´t catch the wanted point during a command, exit the command and use the *Tape Measure Tool* for guidelines in order to fix the needed point as an intersection point of guidelines and repeat the command.
+* It can be a help to use the *Lines Tool* and the *Tape Measure Tool* instead of the *Rectangle Tool* in order to draw surfaces.
+* When creating a component, make sure *Replace selection with Component* is checked.
+
+
 Data export
 -----------
 
@@ -416,4 +427,15 @@ Within section *Coordinate System* you can check whether the coordinate system i
 To continue select *Start Export*.
 
 .. image:: resources/export/03.jpg
+    :width: 100%
+
+Review
+------
+
+To review an exported CityGML building, the `FME Data Inspector <https://www.safe.com/transformers/inspector/>`_ can be used. Here you can e.g. revise if the components and surfaces are correctly represented and are in the correct CityGML groups. When opening a gml or xml file with the program, choose the Format CityGML.
+
+.. image:: resources/review/01.png
+    :width: 100%
+
+.. image:: resources/review/02.png
     :width: 100%
