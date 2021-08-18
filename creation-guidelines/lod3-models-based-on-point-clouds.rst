@@ -181,7 +181,7 @@ The similar steps have to be done for each new object within SketchUp. To assure
 
 Having all objects created and assigned, you can now collect them into one Building object by selecting all items and grouping them. To the group object you can add attributes (*Right Click-> Attributes -> Edit Attributes*) or paste attributes copied before from LoD1 building (*Right Click-> Attributes -> Paste Attributes*).
 
-.. image:: resources/18.jpg
+.. image:: resources/modeling_closing_edit_attributes.jpg
     :width: 100%
 
 After that, it is important to erase all automatic IDs created within a group to avoid redundant IDs within a model and in comparison with other buildings.
@@ -189,29 +189,29 @@ To do that, go to *Attribute Manager* in the main bar of SketchUp. To see all at
 
 Attributes like *PolygonID* and *LinearRingID* should be erased before export into CityGML.
 
-.. image:: resources/18a.jpg
+.. image:: resources/modeling_closing_attribute_manager.jpg
     :width: 100%
 
 The validation of model structure can be done via Model Explorer located on the main SketchUp bar. Before validation, it is recommended to erase all elements not relevant to the export (e.g. point cloud).
 In case of modeling LoD3 object, using MultiSurface geometry and using Building only as container for attributes (not for geometry) the strucuture should be similar to the image below.  
 
-.. image:: resources/18b.JPG
+.. image:: resources/modeling_closing_model_explorer.jpg
     :width: 100%
 
 After clicking on the arrow located in the column gml:id, the structure of the object reveals.
 
-.. image:: resources/18c.JPG
+.. image:: resources/modeling_closing_model_explorer_detailed.jpg
     :width: 100%
 
 
 Additional attributes could be added manually to the model using Edit Attributes window. For example, one can add Date of model creation to the edited object (be careful to use right type of date yyyy-mm-dd, i.e. 2019-09-25).
 
-.. image:: resources/18d.jpg
+.. image:: resources/modeling_closing_model_edit_generic_attribute.jpg
     :width: 100% 
 
-Other possibiltiy to add new attribute, is to use built-in plugin's function. One can access this feature by hoovering on *Attributes* and then *Left Click* on *MeasuredHeight*. This step adds new CityGMl attribute with measured realtive height from the finished 3D SketchUp model.  	
+Other possibiltiy to add new attribute, is to use built-in plugin's function. One can access this feature by hoovering on *Attributes* and then *Left Click* on *MeasuredHeight*. This step adds new CityGML attribute with measured realtive height from the finished 3D SketchUp model.  	
 	
-.. image:: resources/18e.jpg
+.. image:: resources/modeling_add_attribute.jpg
     :width: 100% 	
 
 
@@ -222,19 +222,19 @@ To export files, you have to select an icon with green arrow and GML sign and se
 
 Then, the CityGML Export window is opened. You can tick here *Logging* to see logs while exporting.
 
-.. image:: resources/20.jpg
+.. image:: resources/export_general.jpg
     :width: 100%
 
 In *CityGML Options* section you make further configuration of exported CityGML. Very important is to type in *Appearance Theme* name and remember it in case of further importing it to citydb or other environments.
 
 As ID for specific Polygons, LinearRings were deleted we have to create them again by ticking option *Generate IDs for all elements* this assures uniqueness. Just to be sure, we can select also *Check and correct IDs* thanks to that exporting algorithm will repair issues if they will appear.
 
-.. image:: resources/21.jpg
+.. image:: resources/export_options.jpg
     :width: 100%
 
 Within section *Coordinate System* you can check whether the coordinate system is appropriate and additionally you can apply *Yaw* (offset). In *Textures* tab you can check currently exporting materials and saving folder for those.
 
 To continue select *Start Export*.
 
-.. image:: resources/22.jpg
+.. image:: resources/export_finished.jpg
     :width: 100%
