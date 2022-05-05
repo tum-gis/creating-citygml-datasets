@@ -13,13 +13,14 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+from datetime import datetime
 import sphinx_rtd_theme
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'Creating CityGML Datasets'
-copyright = '2019, Chair of Geoinformatics, Technical University of Munich'
+copyright = str(datetime.now().year) + ', Chair of Geoinformatics, Technical University of Munich'
 author = 'Chair of Geoinformatics, Technical University of Munich'
 
 
