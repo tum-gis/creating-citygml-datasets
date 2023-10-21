@@ -350,7 +350,7 @@ The steps for an assignment to CityGML and eventually for a material assignment 
 .. image:: resources/modeling/closing/01.jpg
     :width: 100%
 
-Having all objects created and assigned, you can then collect them into one Building object by selecting all items and grouping them. To the group object you can add attributes (*Right Click-> Attributes -> Edit Attributes*) or paste attributes copied before from LoD1 building (*Right Click-> Attributes -> Paste Attributes*).
+Having all objects created and assigned, you can then collect them into one Building object by selecting all items and grouping them. Due to SketchUp Plugins errors, it is important to assign the Building  to LoD3 again after grouping . This assures that all elements inside the group are really LoD3.  To the group object you can add attributes (Right Click-> Attributes -> Edit Attributes) or paste attributes copied before from LoD1 building (Right Click-> Attributes -> Paste Attributes).
 
 .. image:: resources/modeling/closing/02.jpg
     :width: 100%
